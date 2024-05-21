@@ -1,7 +1,8 @@
-import Image from "next/image";
-import wearfashion from "@/../public/wearfashion.png";
-import drivers from "@/../public/drivers.png"
-import alk from "@/../public/alk.png"
+import Image from 'next/image';
+import wearfashion from '@/../public/wearfashion.png';
+import drivers from '@/../public/drivers.png'
+import alk from '@/../public/alk.png'
+
 export default function Works() {
     return (
       <div className="w-full bg-transparent h-[200vh] flex flex-col">
@@ -27,7 +28,7 @@ export default function Works() {
             className="transform transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-40"
           />
           <p className="absolute bottom-0 left-0 w-full text-black text-xl px-4 py-2 font-bold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-          Drivers fue un proyecto individual que realicé en SoyHenry. Al ingresar, lo primero que vemos es la página de inicio o landing page, luego nos dirigimos a la página principal donde se muestran los distintos corredores almacenados en la base de datos. Los usuarios pueden filtrar estos corredores según equipos, edad y nombre. Además, es posible agregar nuevos corredores a través de un formulario. Por último, hay una sección "Acerca de mí", donde se presenta una breve descripción del proyecto y de mí como desarrollador.
+          Drivers fue un proyecto individual que realicé en SoyHenry. Al ingresar, lo primero que vemos es la página de inicio o landing page, luego nos dirigimos a la página principal donde se muestran los distintos corredores almacenados en la base de datos. Los usuarios pueden filtrar estos corredores según equipos, edad y nombre. Además, es posible agregar nuevos corredores a través de un formulario. Por último, hay una sección acerca de mí, donde se presenta una breve descripción del proyecto y de mí como desarrollador.
           </p>
         </div>
 
