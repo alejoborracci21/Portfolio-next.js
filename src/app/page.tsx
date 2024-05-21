@@ -18,7 +18,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen h-[200vh] flex-col items-center justify-between mt-20">
       <div className="flex flex-col items-center h-1/2 w-7/12">
         <Image
           src={image}
