@@ -1,8 +1,22 @@
+'use client'
+
+
 import Image from "next/image";
-import { Nav } from "./components/nav";
 import image from "../../public/Fotocv.jpg"
 
 export default function Home() {
+
+  function downloadCV() {
+    const cvPath = '../public/cv.docx';
+    const link = document.createElement('a');
+    link.href = cvPath;
+    link.download = 'Alejo Borracci.docx';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="flex flex-col items-center h-1/2 w-7/12">
@@ -11,7 +25,7 @@ export default function Home() {
           alt="foto"
           width={200}
           height={350}
-          className="rounded-full mt-8"
+          className="rounded-full mt-8 border-2"
         />
         <p className="mt-7 w-full text-center">
           
@@ -24,7 +38,7 @@ export default function Home() {
           y habilidades para llevar tu proyecto al siguiente nivel.
         </p>
 
-        <button className="mt-7">Descargar CV</button>
+        <button className="mt-7 hover:text-emerald-400" onClick={downloadCV}>Descargar CV</button>
       </div>
     </main>
   );
