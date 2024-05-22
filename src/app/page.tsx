@@ -19,7 +19,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen h-[200vh] flex-col items-center justify-between mt-20">
+    <main className="flex min-h-screen h-[200vh] flex-col items-center mt-20">
       <div className="flex flex-col items-center h-1/2 w-7/12">
         <Image
           src={image}
@@ -30,12 +30,12 @@ export default function Home() {
         />
         <p className="mt-7 w-full text-center">
           ¡Hola! Soy Alejo, un apasionado
-          <span className="text-red-400">
+          <span className="text-blue-500">
             {" "}
             Desarrollador Web Fullstack
           </span>{" "}
           especializado principalmente en
-          <span className="text-red-400"> Front-end. </span>
+          <span className="text-blue-500"> Front-end. </span>
           Me encanta crear interfaces de usuario atractivas y funcionales, y
           tengo un fuerte compromiso con la excelencia en cada proyecto en el
           que participo. Estoy emocionado de poder contribuir con mi experiencia

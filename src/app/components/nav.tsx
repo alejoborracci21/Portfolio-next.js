@@ -22,7 +22,7 @@ export const Nav = () => {
   }, []);
 
   const navStyle = {
-    backgroundColor: scrollY > 0 ? "#000321" : "transparent",
+    backgroundColor: scrollY > 0 ? "#64A3FF" : "transparent",
   };
 
   const styles = {
