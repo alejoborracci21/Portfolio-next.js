@@ -8,7 +8,7 @@ import { Skills } from "./components/skills";
 export default function Home() {
 
   function downloadCV() {
-    const cvPath = '../public/cv.docx';
+    const cvPath = '/cv.docx';
     const link = document.createElement('a');
     link.href = cvPath;
     link.download = 'Alejo Borracci.docx';
