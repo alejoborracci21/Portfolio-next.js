@@ -17,7 +17,7 @@ export default function Works() {
                     objectFit="cover"
                     className="transform transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-20"
                 />
-                <p className="absolute content-center bottom-0 left-0 w-full h-full text-black text-xl px-4 py-2 font-bold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <p className="absolute content-center bottom-0 left-0 w-full h-full text-black text-l font-serif px-4 py-2 font-bold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                     WearFashion es una plataforma de E-Commerce de ropa urbana que
                     desarrollamos con un equipo de 5 personas. En el
                     sitio web, los usuarios pueden ver las diferentes prendas
@@ -50,7 +50,7 @@ export default function Works() {
                     objectFit="cover"
                     className="transform transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-20"
                 />
-                <p className="absolute content-center bottom-0 left-0 w-full h-full text-black text-xl px-4 py-2 font-bold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <p className="absolute  font-serif content-center bottom-0 left-0 w-full h-full text-black text-l px-4 py-2 font-bold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                     ALK es un emprendimiento que desarrollamos con dos amigos, enfocado
                     en ofrecer servicios para páginas web. Nuestras soluciones van desde
                     el desarrollo de una página desde cero hasta la implementación de
@@ -61,7 +61,7 @@ export default function Works() {
                 </p>
             </div>
 
-            <div className='flex content-center items-center w-2/4 h-20 ml-auto mr-10 bg-transparent'>
+            <div className='flex content-center items-center w-2/4 h-20 ml-auto mr-10 bg-transparent '>
             <a href="https://github.com/alejoborracci21/ALK-Software" target="_blank" rel="noopener noreferrer" className="w-[50%] h-[50%] flex justify-center items-center hover:text-blue-600">
                     <FaGithub className='w-full h-full' />
                 </a>
@@ -79,7 +79,7 @@ export default function Works() {
                     objectFit="cover"
                     className="transform transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-20"
                 />
-                <p className="absolute content-center bottom-0 left-0 w-full h-full text-black text-xl px-4 py-2 font-bold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                <p className="absolute content-center bottom-0 left-0 w-full h-full text-black text-l font-serif px-4 py-2 font-bold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                     Drivers fue un proyecto individual que realicé en SoyHenry. Al
                     ingresar, lo primero que vemos es la página de inicio o landing
                     page, luego nos dirigimos a la página principal donde se muestran

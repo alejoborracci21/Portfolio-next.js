@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import image from "../../public/Fotocv.jpg"
+import { Skills } from "./components/skills";
 
 export default function Home() {
 
@@ -56,6 +57,8 @@ export default function Home() {
           Descargar CV
         </button>
       </div>
+
+      <Skills/>
     </main>
   );
 }
