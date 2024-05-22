@@ -28,17 +28,33 @@ export default function Home() {
           className="rounded-full mt-8 border-2"
         />
         <p className="mt-7 w-full text-center">
-          
-          ¡Hola! Soy Alejo, un apasionado 
-          <span className="text-red-400"> Desarrollador Web Fullstack</span> especializado principalmente en
+          ¡Hola! Soy Alejo, un apasionado
+          <span className="text-red-400">
+            {" "}
+            Desarrollador Web Fullstack
+          </span>{" "}
+          especializado principalmente en
           <span className="text-red-400"> Front-end. </span>
           Me encanta crear interfaces de usuario atractivas y funcionales, y
           tengo un fuerte compromiso con la excelencia en cada proyecto en el
           que participo. Estoy emocionado de poder contribuir con mi experiencia
           y habilidades para llevar tu proyecto al siguiente nivel.
         </p>
+        <div className="flex items-center w-[100%] ">
+          <a
+            href="https://www.linkedin.com/in/alejo-borracci-2323a6199/"
+            className=" w-[50%] text-center h-10 mt-10 text-blue-500 text-xl hover:text-green-500"
+          >
+            LinkedIn
+          </a>
+          <a href="https://github.com/alejoborracci21" className="w-[50%] text-center h-10 mt-10 text-blue-500 text-xl hover:text-green-500">
+            Github
+          </a>
+        </div>
 
-        <button className="mt-7 hover:text-emerald-400" onClick={downloadCV}>Descargar CV</button>
+        <button className="mt-7 hover:text-emerald-400" onClick={downloadCV}>
+          Descargar CV
+        </button>
       </div>
     </main>
   );
