@@ -5,7 +5,7 @@ import alk from '@/../public/alk.png'
 
 export default function Works() {
     return (
-      <div className="w-full bg-transparent h-[200vh] flex flex-col">
+      <div className="w-full mt-24 bg-transparent h-[200vh] flex flex-col">
         <div className="relative w-2/4 h-[50vh] bg-white border border-white ml-10 mt-14 overflow-hidden group">
           <Image
             src={wearfashion}
