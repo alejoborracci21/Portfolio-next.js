@@ -4,7 +4,7 @@ import { FaNode } from "react-icons/fa";
 
 export const WearfashionTechs = () => {
     return (
-        <div className="flex flex-wrap bg-transparent h-[100%] items-center content-between">
+        <div className="flex flex-wrap bg-transparent h-[100%] items-center content-center">
             <ol className="w-full">
                 <li className="flex items-center mb-2"><SiJavascript className="mr-2"/> Javascript</li>
                 <li className="flex items-center mb-2"><SiReact className="mr-2"/> React</li>
@@ -22,7 +22,7 @@ export const WearfashionTechs = () => {
 
 export const ALKTechs = () => {
     return (
-      <div className="flex flex-wrap bg-transparent h-[100%] items-center content-between">
+      <div className="flex flex-wrap bg-transparent h-[100%] items-center content-center">
         <ol type={"A"} className="w-full">
           <li className="flex items-center mb-5">
             <SiJavascript className="mr-2" /> Javascript
@@ -52,7 +52,7 @@ export const ALKTechs = () => {
 
 export const DriversTechs = () => {
     return (
-        <div className="flex flex-wrap bg-transparent h-[100%] items-center content-between">
+        <div className="flex flex-wrap bg-transparent h-[100%] items-center content-center">
             <ol type={"A"} className="w-full list-disc pl-8">
                 <li className="flex items-center mb-3 "><SiJavascript className="mr-2"/> Javascript</li>
                 <li className="flex items-center mb-3 "><SiExpress className="mr-2"/> Express</li>
