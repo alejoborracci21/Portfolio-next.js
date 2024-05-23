@@ -45,34 +45,18 @@ export const Nav = () => {
     >
       <div className="fixed flex justify-between items-center w-1/2 h-20 px-4 top-0">
         <div className="flex content-center items-center">
-           <Image src={argentina} alt="argentina" className="p-1 mr-3"/>
-        <h2 className="text-lg font-semibold w-40">Alejo Borracci</h2>
+          <Image src={argentina} alt="argentina" className="p-1 mr-3" />
+          <h2 className="text-lg font-semibold w-40">Alejo Borracci</h2>
         </div>
-       
-        <div className="space-x-4">
-          <Link href="/">
-            <button
-              style={styles.home}
-              className="text-lg text-slate-600 hover:text-slate-50"
-            >
-              Sobre mi
-            </button>
+
+        <div className="space-x-4" >
+          <Link href="/" className="text-gray-500" style={styles.home}>Sobre mi</Link>
+
+          <Link href="/works" className="text-gray-500" style={styles.works}>
+            Proyectos
           </Link>
-          <Link href="/works">
-            <button
-              style={styles.works}
-              className="text-lg text-slate-600 hover:text-slate-50"
-            >
-              Proyectos
-            </button>
-          </Link>
-          <Link href="/contact">
-            <button
-              style={styles.contact}
-              className="text-lg text-slate-600 hover:text-slate-50"
-            >
-              Contactame
-            </button>
+          <Link href="/contact" className="text-gray-500" style={styles.contact}>
+            Contactame
           </Link>
         </div>
       </div>
