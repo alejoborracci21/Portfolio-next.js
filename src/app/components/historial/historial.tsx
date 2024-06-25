@@ -2,5 +2,6 @@
 
 export const Historial = () => {
     return (
+        <></>
     )
 }

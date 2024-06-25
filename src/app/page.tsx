@@ -66,9 +66,6 @@ export default function Home() {
       <section className="w-full h-full flex items-center text-center">
         <Skills/>
       </section>
-      <section className="w-full h-full">
-        <Historial />
-      </section>
     </main>
   );
 }
