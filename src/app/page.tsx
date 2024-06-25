@@ -20,7 +20,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen h-[400vh] flex-col items-center mt-20">
+    <main className="flex min-h-screen h-full flex-col items-center mt-20">
       <div className="flex flex-col items-center h-1/2 w-7/12">
         <Image
           src={image}
@@ -63,7 +63,7 @@ export default function Home() {
         </button>
       </div>
 
-      <section className="w-full h-full flex items-center text-center">
+      <section className="w-full h-1/2 flex items-center text-center mt-16">
         <Skills/>
       </section>
     </main>
