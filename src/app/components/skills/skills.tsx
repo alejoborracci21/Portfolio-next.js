@@ -1,3 +1,5 @@
+import ImageGallery from "react-image-gallery";
+
 export const Skills = () => {
     return (
       <div className="flex flex-col w-full h-[80vh]">
