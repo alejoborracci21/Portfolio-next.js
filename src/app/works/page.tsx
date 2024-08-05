@@ -19,7 +19,7 @@ export default function Works() {
                 />
 
                 <p className="absolute content-center bottom-0 left-0 w-full h-full text-black text-l font-serif px-4 py-2 font-bold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-                Desarrollamos un E-Commerce de ropa urbana en el que asumí un rol de liderazgo, trabajando tanto en el backend como en el frontend. En el backend, creé rutas y modelos, y gestioné el registro de usuarios en la página web. En el frontend, integré la base de datos con los diferentes productos y usuarios, y desarrollé componentes para una interfaz de usuario intuitiva y atractiva. Este proyecto incluyó la creación de un sistema de gestión de productos, carritos de compra, y un proceso de pago eficiente, asegurando una experiencia de usuario fluida y agradable.
+                Desarrollamos un E-Commerce de ropa urbana en el que asumí un rol de liderazgo, trabajando tanto en el backend como en el frontend. En el backend, creé rutas y modelos, y gestioné el registro de usuarios en la página web. En el frontend, integré la base de datos con los diferentes productos y usuarios, desarrollé componentes para una interfaz de usuario intuitiva y atractiva, tambien gestioné el registro e inicio de sesion del usuario desde la creacion de la pagina hasta el registro en la base de datos y permisos dentro de la pagina. Este proyecto incluyó la creación de un sistema de gestión de productos, carritos de compra, y un proceso de pago eficiente, asegurando una experiencia de usuario fluida y agradable.
                 </p>
               </div>
             </div>
