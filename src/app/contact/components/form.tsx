@@ -28,7 +28,7 @@ export const Form = () => {
     
     sendEmail(evento.currentTarget);
     setMensaje(initialState);
-    setError(false);  // Reset the error state after successful submission
+    setError(false); 
   };
 
   const onChange = (evento: any) => {
