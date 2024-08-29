@@ -18,10 +18,10 @@ const initialState: Mensaje = {
 export const Form = () => {
   const [mensaje, setMensaje] = useState<Mensaje>(initialState);
   const [error, setError] = useState(false);
-
+  const [text, setText] = useState<number>(0)
   const onSubmit = (evento: any) => {
     evento.preventDefault();
-    if (!mensaje.message || mensaje.email.length < 5 || mensaje.from_name.length < 2) {
+    if (!mensaje.message || mensaje.email.length < 5 || mensaje.from_name.length < 2 || mensaje.message.length > 75) {
       setError(true);
       return;
     }
@@ -32,6 +32,9 @@ export const Form = () => {
   };
 
   const onChange = (evento: any) => {
+    if(evento.target.name === "message"){
+      setText(evento.target.value.length)
+    }
     setMensaje({
       ...mensaje,
       [evento.target.name]: evento.target.value,
@@ -45,8 +48,13 @@ export const Form = () => {
 
   return (
     <div>
-      <form onSubmit={onSubmit} className="flex flex-col items-center content-center">
-        <h2 className="mb-10 mt-10">¡Envíame un correo para comunicarme contigo! 😄</h2>
+      <form
+        onSubmit={onSubmit}
+        className="flex flex-col items-center content-center"
+      >
+        <h2 className="mb-10 mt-10">
+          ¡Envíame un correo para comunicarme contigo! 😄
+        </h2>
         <label className="p-1">
           <input
             name="from_name"
@@ -78,9 +86,16 @@ export const Form = () => {
             className="text-center content-center bg-transparent border-b w-[30vw] h-10 p-10 mb-7"
             style={{ overflow: "hidden" }}
           ></textarea>
+          {text === 0 ? (
+            ""
+          ) : (
+            <p className="text-center justify-center text-green-400">
+              {text}/75
+            </p>
+          )}
         </label>
 
-        <button type="submit">
+        <button type="submit" className="mt-4">
           Enviar
         </button>
       </form>
@@ -88,8 +103,14 @@ export const Form = () => {
       {error && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-8 rounded shadow-md text-center">
-            <p className="text-black">Por favor, verifique que todos los campos se hayan completado correctamente.</p>
-            <button onClick={closeModal} className="mt-4 p-2 bg-blue-500 text-white rounded">
+            <p className="text-black">
+              Por favor, verifique que todos los campos se hayan completado
+              correctamente y que el mensaje sea menor a 75 caracteres
+            </p>
+            <button
+              onClick={closeModal}
+              className="mt-4 p-2 bg-blue-500 text-white rounded"
+            >
               Cerrar
             </button>
           </div>
