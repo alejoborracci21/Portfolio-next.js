@@ -21,7 +21,7 @@ export const Form = () => {
   const [text, setText] = useState<number>(0)
   const onSubmit = (evento: any) => {
     evento.preventDefault();
-    if (!mensaje.message || mensaje.email.length < 5 || mensaje.from_name.length < 2 || mensaje.message.length > 75) {
+    if (!mensaje.message || mensaje.email.length < 5 || mensaje.from_name.length < 2 || mensaje.message.length > 125) {
       setError(true);
       return;
     }
@@ -105,7 +105,7 @@ export const Form = () => {
           <div className="bg-white p-8 rounded shadow-md text-center">
             <p className="text-black">
               Por favor, verifique que todos los campos se hayan completado
-              correctamente y que el mensaje sea menor a 75 caracteres
+              correctamente y que el mensaje sea menor a 125 caracteres
             </p>
             <button
               onClick={closeModal}
