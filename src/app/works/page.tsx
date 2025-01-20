@@ -1,7 +1,4 @@
 import Image from 'next/image';
-import wearfashion from '@/../public/wearfashion.png';
-import drivers from '@/../public/drivers.png';
-import alk from '@/../public/alk.png';
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import { GrDeploy } from "react-icons/gr";
 import { WearfashionTechs, ALKTechs, DriversTechs } from './components/techs';
@@ -13,7 +10,7 @@ export default function Works() {
             <div className="relative flex w-2/4 h-[50vh] bg-white border border-white ml-10 mt-14 overflow-hidden group">
               <div className="relative flex-1">
                 <Image
-                  src={wearfashion}
+                  src="/wearfashion.png"
                   alt="wearfashion image"
                   className="transform transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-20 object-cover"
                 />
@@ -62,7 +59,7 @@ export default function Works() {
             <div className="relative flex w-2/4 h-[50vh] border border-white bg-white ml-auto mr-10 mt-14 overflow-hidden group">
               <div className="relative flex-1">
                 <Image
-                  src={alk}
+                  src="/alk.png"
                   alt="ALK image"
                   className="transform transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-20 object-cover"
                 />
@@ -95,7 +92,7 @@ export default function Works() {
             <div className="relative flex w-2/4 h-[50vh] border border-white bg-white ml-10 mt-14 overflow-hidden group">
               <div className="relative flex-1">
                 <Image
-                  src={drivers}
+                  src="/drivers.png"
                   alt="Drivers image"
                   className="transform transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-20 object-cover"
                 />
