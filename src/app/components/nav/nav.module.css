@@ -1,9 +1,11 @@
-/* styles.css o styles.module.css dependiendo de cómo estés manejando el CSS */
 .navbar {
-    transition: background-color 0.4s ease-in;
-  }
-  
-  .scrolled {
-    background-color: #64A3FF;
-  }
-  
+  position: fixed; /* O puedes usar position: sticky; */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegúrate de que este valor sea mayor que el de otros elementos */
+  transition: background-color 0.4s ease-in;
+}
+
+.scrolled {
+  background-color: #64A3FF;
+}

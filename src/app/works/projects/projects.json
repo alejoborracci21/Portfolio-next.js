@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Wearfashion",
+        "description": "Desarrollamos un E-Commerce de ropa urbana en el que asumí un rol de liderazgo, trabajando tanto en el backend como en el frontend. En el backend, creé rutas y modelos, y gestioné el registro de usuarios en la página web. En el frontend, integré la base de datos con los diferentes productos y usuarios, desarrollé componentes para una interfaz de usuario intuitiva y atractiva, tambien gestioné el registro e inicio de sesion del usuario desde la creacion de la pagina hasta el registro en la base de datos y permisos dentro de la pagina. Este proyecto incluyó la creación de un sistema de gestión de productos, carritos de compra, y un proceso de pago eficiente, asegurando una experiencia de usuario fluida y agradable.",
+        "images": ["/wearfashion.png", "/wearfashion2.png", "/wearfashion3.png"],
+        "url": "https://www.google.com"
+    },
+    {
+        "id": 3,
+        "name": "ALK",
+        "description": "Mi rol en este proyecto fue desarrollar la página web para ALK Software desde cero, utiliza Next.js, TypeScript, React, TailwindCSS, HTML y CSS para crear una presencia online profesional y funcional. El objetivo es mostrar los servicios de ALK, mejorar la experiencia del usuario y optimizar el rendimiento y SEO del sitio. Las etapas del desarrollo incluyen la configuración del proyecto, el diseño y maquetación del sitio, la implementación de funcionalidades interactivas y la optimización y despliegue del sitio en una plataforma de hosting adecuada.",
+        "images": ["/alk.png", "/alk2.png", "/alk3.png"],
+        "url": "https://www.google.com"
+    },
+    {
+        "id": 2,
+        "name": "Drivers",
+        "description": "Drivers fue un proyecto individual que realicé en SoyHenry. Al ingresar, lo primero que vemos es la página de inicio o landing page, luego nos dirigimos a la página principal donde se muestran los distintos corredores almacenados en la base de datos. Los usuarios pueden filtrar estos corredores según equipos, edad y nombre. Además, es posible agregar nuevos corredores a través de un formulario. Por último, hay una sección Acerca de mí, donde se presenta una breve descripción del proyecto y de mí como desarrollador.",
+        "images": ["/drivers.png"],
+        "url": "https://www.google.com"
+    }
+]
