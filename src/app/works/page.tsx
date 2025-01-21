@@ -20,7 +20,7 @@ export default function Works() {
                 <Projects images={project.images} />
               </div>
               <div className={twcss.texts}>
-                <Texts text={project.name} />
+                <Texts text={project.description} name={project.name}/>
               </div>
             </React.Fragment>
           ))}
