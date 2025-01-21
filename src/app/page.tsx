@@ -9,10 +9,10 @@ import { Historial } from "./components/historial/historial";
 export default function Home() {
 
   function downloadCV() {
-    const cvPath = '/cv.docx';
+    const cvPath = 'Currículum actualizado.pdf';
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'Alejo Borracci.docx';
+    link.download = 'Alejo Borracci.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -31,11 +31,8 @@ export default function Home() {
         />
 
         <p className="mt-7 w-full text-center">
-          ¡Hola! Soy Alejo, un apasionado
-          <span className="text-blue-500">
-            {" "}
-            Desarrollador Web Fullstack
-          </span>{" "}
+          ¡Hola! Soy Alejo, un apasionado 
+          <span className="text-blue-500"> Desarrollador Web Fullstack </span>
           especializado principalmente en
           <span className="text-blue-500"> Front-end. </span>
           Me encanta crear interfaces de usuario atractivas y funcionales, y

@@ -32,9 +32,11 @@ export const Form = () => {
   };
 
   const onChange = (evento: any) => {
+    console.log(mensaje.message.length)
     if(evento.target.name === "message"){
       setText(evento.target.value.length)
     }
+    
     setMensaje({
       ...mensaje,
       [evento.target.name]: evento.target.value,
@@ -83,15 +85,17 @@ export const Form = () => {
             onChange={onChange}
             value={mensaje.message}
             placeholder="Deje aquí su mensaje"
-            className="text-center content-center bg-transparent border-b w-[30vw] h-10 p-10 mb-7"
+            className="text-center content-center bg-transparent border-b w-[30vw] h-10 mb-7"
             style={{ overflow: "hidden" }}
           ></textarea>
-          {text === 0 ? (
-            ""
-          ) : (
+          {mensaje.message.length <= 75 ? (
             <p className="text-center justify-center text-green-400">
-              {text}/75
-            </p>
+            {mensaje.message.length}/75
+          </p>
+          ) : (
+            <p className="text-center justify-center text-red-400">
+            {mensaje.message.length}/75
+          </p>
           )}
         </label>
 
