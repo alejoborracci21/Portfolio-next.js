@@ -20,7 +20,7 @@ export const Projects: React.FC<ProjectsProps> = ({ images }) => {
         <div className='flex flex-col w-full h-full justify-center items-center ml-3'>
             <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay interval={5000}>
                 {images.map((image, index) => (
-                    <div key={index}>
+                    <div key={index} className='border-2 border-gray-300'>
                         <Image src={image} alt={`Slide ${index}`} width={800} height={600} />
                     </div>
                 ))}

@@ -31,14 +31,7 @@ export default function Home() {
         />
 
         <p className="mt-7 w-full text-center">
-          ¡Hola! Soy Alejo, un apasionado 
-          <span className="text-blue-500"> Desarrollador Web Fullstack </span>
-          especializado principalmente en
-          <span className="text-blue-500"> Front-end. </span>
-          Me encanta crear interfaces de usuario atractivas y funcionales, y
-          tengo un fuerte compromiso con la excelencia en cada proyecto en el
-          que participo. Estoy emocionado de poder contribuir con mi experiencia
-          y habilidades para llevar tu proyecto al siguiente nivel.
+        ¡Hola! Soy Alejo Borracci, desarrollador Fullstack con pasión por aprender y trabajar en equipo. Me destaco por mi capacidad de adaptarme rápidamente, resolver problemas y aportar soluciones prácticas. Disfruto enfrentar nuevos desafíos y contribuir al éxito de los proyectos en los que participo.
         </p>
         <div className="flex items-center w-[100%] ">
           <a
