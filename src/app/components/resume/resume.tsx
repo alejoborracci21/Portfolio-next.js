@@ -30,9 +30,9 @@ export const Resume = () => {
           href="https://www.linkedin.com/in/alejo-borracci-2323a6199/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#202020] flex items-center justify-center h-full w-full rounded-sm"
+          className="bg-[#131313] flex items-center justify-center h-full w-full rounded-lg"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
+          <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
         </a>
 
         {/* GitHub */}
@@ -40,7 +40,7 @@ export const Resume = () => {
           href="https://github.com/alejoborracci21"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#202020] flex items-center justify-center h-full w-full rounded-sm"
+          className="bg-[#131313] flex items-center justify-center h-full w-full rounded-lg"
         >
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
@@ -48,9 +48,9 @@ export const Resume = () => {
         {/* Email */}
         <a
           href="mailto:alejotrabajo2001@hotmail.com"
-          className="bg-[#202020] flex items-center justify-center h-full w-full rounded-sm"
+          className="bg-[#131313] flex items-center justify-center h-full w-full rounded-lg"
         >
-          <FontAwesomeIcon icon={faEnvelope} size="2x" style={{backgroundColor:"transparent" }}/>
+          <FontAwesomeIcon icon={faEnvelope} size="2x"  style={{backgroundColor:"transparent" }}/>
         </a>
       </div>
     </div>
