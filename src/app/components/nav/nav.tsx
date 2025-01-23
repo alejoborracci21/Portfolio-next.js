@@ -37,14 +37,14 @@ export const Nav = () => {
   };
 
   return (
-    <div className={`flex flex-row items-center w-full h-full  p-4`}>
+    <div className={`flex flex-row items-center w-full h-full p-4 mb-0`}>
         <div className="text-center justify-center space-x-4  w-full">
           <Link href="/" style={linkStyles.home}>Acerca de mi</Link>
           <Link href="/works" style={linkStyles.works}>Portfolio</Link>
           <Link href="/resume" style={linkStyles.resumen}>Resumen</Link>
           <Link href="/contact" style={linkStyles.contact}>Contacto</Link>
         </div>
-          <button className="text-nowrap bg-[#e3194d] rounded-xl p-3" onClick={downloadCV}>Descargar CV</button>
+          <button className="text-nowrap bg-[#e3194d] rounded-xl p-3 mr-5" onClick={downloadCV}>Descargar CV</button>
 
     </div>
   );
