@@ -19,7 +19,7 @@ const Experience: React.FC<TimelineProps> = ({ jobs }) => {
       {jobs.map((job, index) => (
         <TimelineItem key={index}>
           <TimelineSeparator>
-            <TimelineDot color="primary" />
+            <TimelineDot style={{ backgroundColor: '#e3194d' }} />
             {index < jobs.length - 1 && <TimelineConnector />}
           </TimelineSeparator>
           <TimelineContent>

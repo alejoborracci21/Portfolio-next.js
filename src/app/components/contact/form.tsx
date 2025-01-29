@@ -52,11 +52,11 @@ export const Form = () => {
   //Styles
   let commonStyles = "flex flex-col bg-[#131313] w-[100%] h-[100%] justify-center items-center rounded-lg";
   let labelsStyles = "flex flex-col items-center justify-center w-[100%] h-[50%]";
-  let inputStyles = "w-[90%] h-[100%] bg-[#131313]  text-white border border-[#e3194d] rounded-lg p-2 m-2 text-center placeholder-white";
+  let inputStyles = "w-[90%] h-[100%] bg-[#131313]  text-white rounded-lg p-2 m-2 text-center placeholder-white bg-[#1b1c1e]";
 
 
   return (
-    <div className="grid grid-cols-3 grid-rows-4 gap-7 w-[75vw] h-[100vh] items-center content-center bg-transparent"> 
+    <div className="grid grid-cols-3 grid-rows-4 gap-7 w-[75vw] h-[100vh] items-center content-center bg-transparent rounded-lg"> 
       <div className={`col-start-1 row-start-1 ${commonStyles}`}>
       <svg xmlns="http://www.w3.org/2000/svg" width={60} height={90} viewBox="0 0 24 24"><path fill="#e3194d" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"></path></svg>
       <p className="text-white">Rosario, Santa Fe. Argentina.</p>
@@ -75,7 +75,7 @@ export const Form = () => {
       </div>
 
       
-      <div className="col-span-2 row-span-4 col-start-2 row-start-1 bg-[#131313] w-[100%] h-[100%]">
+      <div className="col-span-2 row-span-4 col-start-2 row-start-1 bg-[#131313] w-[100%] h-[100%] rounded-lg">
         <form className="grid grid-cols-4 grid-rows-4 gap-2 w-[100%] h-[100%] justify-center items-center rounded-lg" onSubmit={onSubmit}>
           <label className={`col-span-2 ${labelsStyles}`}>
             <input type="text" name="name" value={mensaje.name} onChange={onChange} placeholder="Nombre" className={`${inputStyles}`} />
@@ -94,7 +94,7 @@ export const Form = () => {
           </label>
 
           <label className={`col-span-4 row-span-2 row-start-3 flex flex-col w-[100%] h-[100%] items-center justify-center mb-2`}>
-            <textarea name="message" value={mensaje.message} onChange={onChange} placeholder="Escriba aquí su mensaje" className="w-[95%] h-[100%] bg-[#131313] text-center text-white border border-[#e3194d] rounded-lg p-2 m-2 placeholder-white" maxLength={125} />
+            <textarea name="message" value={mensaje.message} onChange={onChange} placeholder="Escriba aquí su mensaje" className="w-[95%] h-[100%] text-center text-white bg-[#1b1c1e] rounded-lg p-2 m-2 placeholder-white" maxLength={125} />
             <p className="text-white">{text}/125</p>
           </label>
           <div className="col-span-4 row-start-5 flex flex-col items-center justify-center w-[100%] h-[100%]">
