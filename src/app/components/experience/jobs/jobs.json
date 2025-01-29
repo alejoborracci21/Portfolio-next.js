@@ -1,0 +1,20 @@
+[
+    {
+        "name": "BIMTRAZER, Fisherton, Santa Fe",
+        "position": "Project Manager",
+        "date": "Octubre 2024 - Febrero 2025",
+        "description": "En Bimtrazer trabajé en conjunto con un equipo de desarrollo y arquitectas para mantener y optimizar una plataforma que integra BIM, Inteligencia Artificial y Blockchain en el sector de la construcción. Mi rol incluía la coordinación con clientes a través de reuniones semanales, donde realizaba seguimientos de obra, capacitaciones sobre el uso de la plataforma y recopilación de requerimientos para evaluar su viabilidad técnica con el equipo. Durante esta experiencia, profundicé mis conocimientos en la metodología SCRUM, arquitectura de microservicios e implementación de IA en entornos constructivos."
+    },
+    {
+        "name": "Bootcamp Henry, Remoto",
+        "position": "Fullstack developer",
+        "date": "Marzo 2023 - Marzo 2024 ",
+        "description": "En el bootcamp de Henry adquirí las bases fundamentales del desarrollo Fullstack, completando más de 800 horas de formación intensiva. Durante el programa, desarrollé dos proyectos clave: Drivers, un proyecto individual en el que integré una API con una base de datos para mostrar información sobre corredores de Fórmula 1, y Wearfashion, un e-commerce de ropa urbana desarrollado en equipo junto a cinco compañeros. Estos desafíos me permitieron aplicar nuevas tecnologías, fortalecer mis habilidades en programación y profundizar mi conocimiento en el mundo IT."
+    },
+    {
+        "name": "Escuela de educación técnica 275, Alcorta, Santa Fe",
+        "position": "Tecnico en informatica",
+        "date": "Febrero 2014 - Noviembre 2019 ",
+        "description": "En la Escuela de Educación Técnico Profesional 275, donde me gradué como Técnico en Informática, di mis primeros pasos en el mundo de la programación. Fue allí donde escribí mis primeras líneas de código en HTML y CSS, comprendiendo los fundamentos del desarrollo web. Además, aprendí a estructurar algoritmos mediante diagramas de flujo, así como a utilizar bucles y condicionales para la resolución de problemas lógicos. Esta formación inicial despertó mi interés por la tecnología y sentó las bases de mi camino como desarrollador."
+    }
+]

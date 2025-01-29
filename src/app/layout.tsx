@@ -17,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col items-center justify-between bg-slate-900">
-        <Nav />
+      <body className="flex flex-col items-center justify-between bg-[#1b1c1e] font-inter">
+        <header className="w-full h-[8vh]">
+          <Nav />
+        </header>
         {children}
       </body>
     </html>

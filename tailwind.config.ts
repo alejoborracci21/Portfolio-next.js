@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
       animation: {
         slideLeft: 'slideLeft 1s ease-in-out',
         slideRight: 'slideRight 1s ease-in-out',
