@@ -44,7 +44,7 @@ export const Nav = () => {
           <Link href="/resume" style={linkStyles.resumen}>Resumen</Link>
           <Link href="/contact" style={linkStyles.contact}>Contacto</Link>
         </div>
-          <button className="text-nowrap bg-[#e3194d] rounded-xl p-3 mr-5" onClick={downloadCV}>Descargar CV</button>
+          <button className="text-nowrap text-white bg-[#e3194d] rounded-full w-40 h-12 p-2 mr-5" onClick={downloadCV}>Descargar CV</button>
 
     </div>
   );

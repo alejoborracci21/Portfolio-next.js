@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export const ProfileImage = () => {
     return(
-        <div className="relative h-[70vh] w-[30vw] bg-[#131313] rounded-xl ml-40 shadow-black shadow-lg overflow-hidden">
-            <div className="relative w-full h-full z-10">
-                <Image src="/Alejo.png" alt="Alejo Borracci" layout="fill" objectFit="cover" objectPosition='bottom' className='rounded-xl' />
+        <div className="relative h-[60vh] w-[28vw] items-center content-center bg-[#131313] rounded-lg ml-40 mt-10 ">
+            <div className="relative w-full h-full border-[1px] border-[#1b1c1e] rounded-lg">
+                <Image src="/foto4.png" alt="Alejo Borracci" fill className='rounded-xl object-cover object-bottom' />
             </div>
         </div>
     )
