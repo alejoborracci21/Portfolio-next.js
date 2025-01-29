@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import { sendEmail } from "../hooks/email.js";
+import { sendEmail } from "./hooks/email";
 
 interface Mensaje {
   from_name: string;
@@ -52,44 +52,44 @@ export const Form = () => {
     <div>
       <form
         onSubmit={onSubmit}
-        className="flex flex-col items-center content-center"
+        className="flex flex-col items-center content-center border-white rounded-lg w-[100%] h-[100%] p-4"
       >
-        <h2 className="mb-10 mt-10">
+        <h2 className="mb-10 mt-10 text-[#ffffff]">
           ¡Envíame un correo para comunicarme contigo! 😄
         </h2>
-        <label className="p-1">
+        <label className="p-1 text-[#ffffff]">
           <input
             name="from_name"
             onChange={onChange}
             type="text"
             value={mensaje.from_name}
             placeholder="Nombre completo"
-            className="text-center content-center bg-transparent border-b w-[30vw] h-4 p-6 mb-7"
+            className="text-center content-center bg-transparent border-b w-[30vw] h-4 p-6 mb-7 text-[#ffffff]"
           />
         </label>
 
-        <label>
+        <label className="p-1 text-[#ffffff]">
           <input
             name="email"
             onChange={onChange}
             type="email"
             value={mensaje.email}
             placeholder="Tu Email"
-            className="text-center content-center bg-transparent border-b w-[30vw] h-4 p-6 mb-7"
+            className="text-center content-center bg-transparent border-b w-[30vw] h-4 p-6 mb-7 text-[#ffffff]"
           />
         </label>
 
-        <label>
+        <label className="p-1 text-[#ffffff]">
           <textarea
             name="message"
             onChange={onChange}
             value={mensaje.message}
             placeholder="Deje aquí su mensaje"
-            className="text-center content-center bg-transparent border-b w-[30vw] h-10 mb-7"
+            className="text-center content-center bg-transparent border-b w-[30vw] h-10 mb-7 text-[#ffffff]"
             style={{ overflow: "hidden" }}
           ></textarea>
           {mensaje.message.length <= 75 ? (
-            <p className="text-center justify-center text-green-400">
+            <p className="text-center justify-center text-green-400 ">
             {mensaje.message.length}/75
           </p>
           ) : (
@@ -99,7 +99,7 @@ export const Form = () => {
           )}
         </label>
 
-        <button type="submit" className="mt-4">
+        <button type="submit" className="mt-4 text-[#ffffff]">
           Enviar
         </button>
       </form>
@@ -107,7 +107,7 @@ export const Form = () => {
       {error && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-8 rounded shadow-md text-center">
-            <p className="text-black">
+            <p className="text-[#ffffff]">
               Por favor, verifique que todos los campos se hayan completado
               correctamente y que el mensaje sea menor a 125 caracteres
             </p>

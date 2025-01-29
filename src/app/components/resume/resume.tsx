@@ -10,8 +10,8 @@ export const Resume = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000); 
+    setLoading(false);
+    }, 500); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -38,7 +38,6 @@ export const Resume = () => {
           </div>
         ) : (
           <>
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/alejo-borracci-2323a6199/"
               target="_blank"
@@ -48,7 +47,6 @@ export const Resume = () => {
               <FontAwesomeIcon icon={faLinkedinIn} style={{ fontSize: '1.5rem' }} />
             </a>
 
-            {/* GitHub */}
             <a
               href="https://github.com/alejoborracci21"
               target="_blank"
@@ -58,7 +56,6 @@ export const Resume = () => {
               <FontAwesomeIcon icon={faGithub} style={{ fontSize: '1.5rem' }} />
             </a>
 
-            {/* Email */}
             <a
               href="mailto:alejotrabajo2001@hotmail.com"
               className="bg-[#131313] flex items-center justify-center h-full w-full rounded-sm text-2xl"

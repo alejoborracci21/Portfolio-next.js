@@ -12,7 +12,6 @@ export const sendEmail = (form) => {
         alert("Tu email se envio correctamente, gracias por comunicarte conmigo!");
       },
       (error) => {
-        console.log(error)
         alert('Hubo un error al envial el Email, porfavor intentalo de nuevo');
       },
     );
