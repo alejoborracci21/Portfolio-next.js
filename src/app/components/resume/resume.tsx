@@ -30,7 +30,7 @@ export const Resume = () => {
       Soy una persona apasionada por la programación y los desafíos que representan los proyectos tecnológicos. Como desarrollador fullstack, me destaco por mi capacidad de adaptarme rápidamente a nuevos entornos y aprender con eficiencia. Disfruto colaborar en equipo, enfrentando problemas complejos con creatividad y dedicación. Mi entusiasmo por el aprendizaje constante me impulsa a crecer tanto profesional como personalmente, aportando soluciones innovadoras y comprometidas en cada proyecto en el que participo.
       </p>
 
-      <h1 className="ml-4 mt-14 text-3xl">Contacto</h1>
+      <h1 className="ml-4 mt-14 text-3xl">Mis redes</h1>
       <div className="grid grid-cols-3 gap-4 w-[30%] h-[12%] p-4 rounded-sm">
         {loading ? (
           <div className="col-span-3 flex items-center justify-center">
