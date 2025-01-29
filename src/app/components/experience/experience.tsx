@@ -29,6 +29,8 @@ const Experience: React.FC<TimelineProps> = ({ jobs }) => {
             <Typography variant="body2" className="text-[#898989]">{job.description}</Typography>
           </TimelineContent>
         </TimelineItem>
+
+        // comentario de prueba
       ))}
     </Timeline>
   );
