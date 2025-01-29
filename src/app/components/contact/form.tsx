@@ -52,7 +52,7 @@ export const Form = () => {
   //Styles
   let commonStyles = "flex flex-col bg-[#131313] w-[100%] h-[100%] justify-center items-center rounded-lg";
   let labelsStyles = "flex flex-col items-center justify-center w-[100%] h-[50%]";
-  let inputStyles = "w-[90%] h-[100%] bg-[#131313]  text-white border border-[#e3194d] rounded-lg p-2 m-2 text-center";
+  let inputStyles = "w-[90%] h-[100%] bg-[#131313]  text-white border border-[#e3194d] rounded-lg p-2 m-2 text-center placeholder-white";
 
 
   return (
@@ -86,7 +86,7 @@ export const Form = () => {
           </label>
 
           <label className={`col-span-2 row-start-2 ${labelsStyles}`}>
-            <input type="number" name="phone" value={mensaje.phone} onChange={onChange} placeholder="Numero telefonico (Opcional)" className={`${inputStyles}`} />
+            <input type="number" name="phone" value={mensaje.phone} onChange={onChange} placeholder="Numero telefónico (Opcional)" className={`${inputStyles}`} />
           </label>
 
           <label className={`col-span-2 col-start-3 row-start-2 ${labelsStyles}`}>
@@ -94,7 +94,7 @@ export const Form = () => {
           </label>
 
           <label className={`col-span-4 row-span-2 row-start-3 flex flex-col w-[100%] h-[100%] items-center justify-center mb-2`}>
-            <textarea name="message" value={mensaje.message} onChange={onChange} placeholder="Escriba aqui su mensaje" className="w-[95%] h-[100%] bg-[#131313] text-center text-white border border-[#e3194d] rounded-lg p-2 m-2" maxLength={125} />
+            <textarea name="message" value={mensaje.message} onChange={onChange} placeholder="Escriba aquí su mensaje" className="w-[95%] h-[100%] bg-[#131313] text-center text-white border border-[#e3194d] rounded-lg p-2 m-2 placeholder-white" maxLength={125} />
             <p className="text-white">{text}/125</p>
           </label>
           <div className="col-span-4 row-start-5 flex flex-col items-center justify-center w-[100%] h-[100%]">
