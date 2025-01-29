@@ -22,6 +22,11 @@ export default function Home() {
         <h1 className="text-4xl text-white mb-10 mt-14">MIS PROYECTOS</h1>
         <Works/>
       </div>
+
+      // comentario de prueba
+        <div>
+          <p>hola</p>
+        </div>
     </main>
   );
 }
