@@ -25,7 +25,7 @@ const Experience: React.FC<TimelineProps> = ({ jobs }) => {
           <TimelineContent>
             <Typography variant="h4" className="text-white mb-2">{job.name}</Typography>
             <Typography variant="h5" className="text-white mb-2"> {job.position}</Typography>
-            <Typography variant="body2" color="textSecondary" className="text-[#898989] mb-2">{job.date}</Typography>
+            <Typography variant="body2" className="text-[#898989] mb-2">{job.date}</Typography>
             <Typography variant="body2" className="text-[#898989]">{job.description}</Typography>
           </TimelineContent>
         </TimelineItem>
