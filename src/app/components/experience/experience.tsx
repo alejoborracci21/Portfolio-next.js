@@ -30,9 +30,9 @@ const Experience: React.FC<TimelineProps> = ({ jobs }) => {
           </TimelineContent>
         </TimelineItem>
 
-        // comentario de prueba
       ))}
     </Timeline>
+
   );
 };
 
