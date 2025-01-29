@@ -5,6 +5,7 @@ import { ProfileImage } from "./components/resume/image";
 import Works from "./works/page";
 import ResumePage from "./resume/page";
 import { Form } from "./components/contact/form";
+import Footer from "./components/footer/footer";
 
 export default function Home() {
 
@@ -42,7 +43,7 @@ export default function Home() {
         <Form/>
       </div>
       
-      
+      <Footer/>
     </main>
   );
 }
