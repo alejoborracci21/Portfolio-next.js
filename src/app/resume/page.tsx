@@ -1,5 +1,5 @@
 import React from "react";
-import  Experience  from "../components/experience/experience";
+import Experience from "../components/experience/experience";
 import jobsData from '../components/experience/jobs/jobs.json';
 
 const ResumePage = () => {

@@ -17,29 +17,29 @@ export default function Home() {
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="w-[80%] h-[1px] bg-black mt-4 mb-4"></div>
+        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4"></div>
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="text-4xl text-[#e3194d] mb-10 mt-14">SOBRE MI</h1>
+        <h2 className="text-4xl text-[#e3194d] mb-10 mt-14">SOBRE MI</h2>
         <ResumePage/>
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="w-[80%] h-[1px] bg-black mt-4 mb-4"></div>
+        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4"></div>
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="text-4xl text-[#e3194d] mb-10 mt-14">MIS PROYECTOS</h1>
+        <h2 className="text-4xl text-[#e3194d] mb-10 mt-14">MIS PROYECTOS</h2>
         <Works/>
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="w-[80%] h-[1px] bg-black mt-4 mb-4"></div>
+        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4"></div>
       </div>
 
       <div className="flex flex-col items-center justify-center h-[100vh] mb-10">
-        <h1 className="text-4xl text-[#e3194d] mb-10 mt-14">CONTACTO</h1>
+        <h2 className="text-4xl text-[#e3194d] mb-10 mt-14">CONTACTO</h2>
         <Form/>
       </div>
       

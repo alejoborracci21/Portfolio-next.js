@@ -51,8 +51,8 @@ export const Form = () => {
 
   //Styles
   let commonStyles = "flex flex-col bg-[#131313] w-[100%] h-[100%] justify-center items-center rounded-lg";
-  let labelsStyles = "flex flex-col items-center justify-center w-[100%] h-[50%]";
-  let inputStyles = "w-[90%] h-[100%] bg-[#131313]  text-white rounded-lg p-2 m-2 text-center placeholder-white bg-[#1b1c1e]";
+  let labelsStyles = "flex flex-col items-center justify-center w-[100%] h-[90%] mt-4";
+  let inputStyles = "w-[90%] h-[100%] bg-[#1a1a1a] text-white rounded-lg p-2 m-2 text-center placeholder-white";
 
 
   return (
@@ -76,7 +76,7 @@ export const Form = () => {
 
       
       <div className="col-span-2 row-span-4 col-start-2 row-start-1 bg-[#131313] w-[100%] h-[100%] rounded-lg">
-        <form className="grid grid-cols-4 grid-rows-4 gap-2 w-[100%] h-[100%] justify-center items-center rounded-lg" onSubmit={onSubmit}>
+        <form className="grid grid-cols-4 grid-rows-4 gap-2 w-[100%] h-[80%] justify-center items-center rounded-lg" onSubmit={onSubmit}>
           <label className={`col-span-2 ${labelsStyles}`}>
             <input type="text" name="name" value={mensaje.name} onChange={onChange} placeholder="Nombre" className={`${inputStyles}`} />
           </label>
@@ -94,11 +94,11 @@ export const Form = () => {
           </label>
 
           <label className={`col-span-4 row-span-2 row-start-3 flex flex-col w-[100%] h-[100%] items-center justify-center mb-2`}>
-            <textarea name="message" value={mensaje.message} onChange={onChange} placeholder="Escriba aquí su mensaje" className="w-[95%] h-[100%] text-center text-white bg-[#1b1c1e] rounded-lg p-2 m-2 placeholder-white" maxLength={125} />
+            <textarea name="message" value={mensaje.message} onChange={onChange} placeholder="Escriba aquí su mensaje" className="w-[95%] h-[100%] text-center justify-center text-white bg-[#1a1a1a] rounded-lg p-2 mb-2 mt-10 placeholder-white" maxLength={125} />
             <p className="text-white">{text}/125</p>
           </label>
-          <div className="col-span-4 row-start-5 flex flex-col items-center justify-center w-[100%] h-[100%]">
-            <button className="bg-[#e3194d] w-[50%] h-[100%] text-white rounded-lg p-6 mb-5 mt-4 text-center justify-center items-center">Enviar</button>
+          <div className="col-span-4 row-start-5 flex flex-col mt-10 items-center justify-center w-[100%] h-[100%]">
+            <button className="bg-[#e3194d] w-[50%] h-[70%] text-white rounded-lg p-6  text-center justify-center items-center">Enviar</button>
           </div>
         </form>
       </div>
