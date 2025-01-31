@@ -1,12 +1,20 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 const Nav = () => {
   const pathname = usePathname();
+  const router = useRouter();
+
   const [isOpen, setIsOpen] = useState(false);
+
+  
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   const downloadCV = () => {
     const link = document.createElement('a');
@@ -32,15 +40,23 @@ const Nav = () => {
     }
   };
 
+  const handleNavigation = (path: string) => {
+    setIsOpen(false); 
+    setTimeout(() => {
+      router.push(path); 
+    }, 100); 
+  };
+
   return (
     <div className="flex flex-row items-center w-full h-full p-4 mb-0">
       <div className="text-center justify-center space-x-4 w-full max-md:opacity-0">
         <Link href="/" style={linkStyles.home}>Inicio</Link>
         <Link href="/works" style={linkStyles.works}>Proyectos</Link>
-        <Link href="/resume" style={linkStyles.resumen}>Sobre mi</Link>
-        <Link href="/contact" style={linkStyles.contact}>Contactame</Link>
+        <Link href="/resume" style={linkStyles.resumen}>Sobre mí</Link>
+        <Link href="/contact" style={linkStyles.contact}>Contáctame</Link>
       </div>
 
+      {/* Menú hamburguesa */}
       <div className="absolute left-0 ml-5 md:hidden">
         <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -48,11 +64,22 @@ const Nav = () => {
           </svg>
         </button>
         {isOpen && (
-          <div className="absolute right-0 mt-2 w-48 bg-[#131313] rounded-lg shadow-lg">
-            <Link href="/" className="block px-4 py-2 text-white" onClick={() => setIsOpen(false)}>Inicio</Link>
-            <Link href="/works" className="block px-4 py-2 text-white" onClick={() => setIsOpen(false)}>Proyectos</Link>
-            <Link href="/resume" className="block px-4 py-2 text-white" onClick={() => setIsOpen(false)}>Sobre mi</Link>
-            <Link href="/contact" className="block px-4 py-2 text-white" onClick={() => setIsOpen(false)}>Contactame</Link>
+          <div className="fixed inset-0 bg-black bg-opacity-50 z-50" onClick={() => setIsOpen(false)}>
+            <div className="relative mt-24 w-48 bg-[#131313] rounded-lg shadow-lg ml-5 p-4" onClick={(e) => e.stopPropagation()}>
+              <button className='absolute top-2 right-2 text-white' onClick={() => setIsOpen(false)}>X</button>
+              <Link href="/" className="block px-4 py-2 text-white w-full" onClick={() => handleNavigation("/")}>
+                Inicio
+              </Link>
+              <Link href="/works" className="block px-4 py-2 text-white w-full" onClick={() => handleNavigation("/works")}>
+                Proyectos
+              </Link>
+              <Link href="/resume" className="block px-4 py-2 text-white w-full" onClick={() => handleNavigation("/resume")}>
+                Sobre mí
+              </Link>
+              <Link href="/contact" className="block px-4 py-2 text-white w-full" onClick={() => handleNavigation("/contact")}>
+                Contáctame
+              </Link>
+            </div>
           </div>
         )}
       </div>

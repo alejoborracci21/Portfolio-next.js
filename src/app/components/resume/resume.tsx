@@ -39,7 +39,7 @@ export const Resume = () => {
             <p className="text-2xl">Cargando...</p>
           </div>
         ) : (
-          <div className='flex flex-grow w-[100%] '>
+          <div className='flex flex-grow w-[100%]  max-sm:w-[100vw]'>
             <a
               href="https://www.linkedin.com/in/alejo-borracci-2323a6199/"
               target="_blank"

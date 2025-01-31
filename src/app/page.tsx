@@ -18,7 +18,7 @@ export default function Home() {
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4 sm:mt-8 sm:mb-8"></div>
+        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4 sm:mt-8 sm:mb-8 max-md:mt-10 max-md:mb-10"></div>
       </div>
 
       <div className="flex flex-col items-center h-[140vh] max-520:h-[320vh] max-sm:h-[280vh] max-md:h-[230vh] max-lg:h-[190vh] max-xl:h-[150vh] ">
@@ -27,20 +27,20 @@ export default function Home() {
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4"></div>
+        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4 max-md:mt-10 max-md:mb-10"></div>
       </div>
 
-      <div className="flex flex-col items-center h-[220vh]">
+      <div className="flex flex-col items-center min-h-screen">
         <h2 className="text-4xl text-[#e3194d] mb-10 mt-14">MIS PROYECTOS</h2>
         <Works/>
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4"></div>
+        <div className="w-[80%] h-[1px] bg-white mt-4 mb-4 max-md:mt-10 max-md:mb-10"></div>
       </div>
 
       <div className="flex flex-col items-center justify-center h-[100vh] mb-10">
-        <h2 className="text-4xl text-[#e3194d] mb-10 mt-14">CONTACTO</h2>
+        <h2 className="text-4xl text-[#e3194d] mb-10 mt-14 max-md:mb-0">CONTACTO</h2>
         <Form/>
       </div>
       
