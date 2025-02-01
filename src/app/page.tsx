@@ -30,7 +30,7 @@ export default function Home() {
         <div className="w-[80%] h-[1px] bg-white mt-4 mb-4 max-md:mt-10 max-md:mb-10"></div>
       </div>
 
-      <div className="flex flex-col items-center min-h-screen">
+      <div className="flex flex-col items-center min-h-screen h-[350vh] max-lg:h-[300vh] max-sm:h-[340vh]">
         <h2 className="text-4xl text-[#e3194d] mb-10 mt-14">MIS PROYECTOS</h2>
         <Works/>
       </div>
