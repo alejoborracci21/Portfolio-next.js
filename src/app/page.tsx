@@ -9,6 +9,7 @@ import Footer from "./components/footer/footer";
 
 export default function Home() {
 
+  const containerTws = 'w-full flex justify-center';
 
   return (
     <main className="flex flex-col min-h-screen h-full w-[100%] mt-10 overflow-x-hidden">
@@ -17,7 +18,7 @@ export default function Home() {
         <ProfileImage />
       </div>
 
-      <div className="w-full flex justify-center">
+      <div className={containerTws}>
         <div className="w-[80%] h-[1px] bg-white mt-4 mb-4 sm:mt-8 sm:mb-8 max-md:mt-10 max-md:mb-10"></div>
       </div>
 
@@ -26,7 +27,7 @@ export default function Home() {
         <ResumePage/>
       </div>
 
-      <div className="w-full flex justify-center">
+      <div className={containerTws}>
         <div className="w-[80%] h-[1px] bg-white mt-4 mb-4 max-md:mt-10 max-md:mb-10"></div>
       </div>
 
@@ -35,7 +36,7 @@ export default function Home() {
         <Works/>
       </div>
 
-      <div className="w-full flex justify-center">
+      <div className={containerTws}>
         <div className="w-[80%] h-[1px] bg-white mt-4 mb-4 max-md:mt-10 max-md:mb-10"></div>
       </div>
 
