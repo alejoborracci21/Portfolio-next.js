@@ -5,53 +5,45 @@ import { Projects } from '../components/works/carrusel';
 import { Texts } from '../components/works/text';
 import projectsData from './projects/projects.json';
 
-const twcss = {
-  projects: 'col-span-2 row-span-3',
-  texts: 'col-span-2 row-span-3'
-}
-
 export default function Works() {
-    const [containerHeight, setContainerHeight] = useState('100vh');
+  const [containerHeight, setContainerHeight] = useState('auto');
 
-    useEffect(() => {
-        const numberOfProjects = projectsData.length;
-        const height = `${200 * Math.ceil(numberOfProjects / 3)}vh`;
-        setContainerHeight(height);
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.fade-in');
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          el.classList.add('visible');
+        }
+      });
+    };
 
-        const handleScroll = () => {
-            const elements = document.querySelectorAll('.fade-in');
-            elements.forEach((el) => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight) {
-                    el.classList.add('visible');
-                }
-            });
-        };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-        const elements = document.querySelectorAll('.fade-in');
-        elements.forEach((el) => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight) {
-                el.classList.add('visible');
-            }
-        });
+  return (
+    <div className="flex flex-col items-center justify-center w-full min-h-screen border-[#1b1c1e] rounded-lg">
+      {projectsData.map((project) => (
+        <div key={project.id} className="flex flex-col items-center w-full h-auto fade-in p-4 space-y-4 mb-24">
+          
+          {/* Título del proyecto (arriba) */}
+          <h1 className="mt-14 text-white text-2xl font-bold max-md:text-center">
+            {project.name}
+          </h1>
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+          {/* Carrusel de imágenes (centro) */}
+          <div className="w-full max-w-[70vw] h-auto max-md:max-w-full">
+            <Projects images={project.images} />
+          </div>
 
-    return (
-        <div className="grid grid-cols-4 gap-4 w-[100%] ml-12 border-[#1b1c1e] rounded-lg overflow-hidden" style={{ height: containerHeight }}>
-          {projectsData.map((project) => (
-            <React.Fragment key={project.id}>
-              <div className={`${twcss.projects} fade-in`}>
-                <Projects images={project.images} />
-              </div>
-              <div className={`${twcss.texts} fade-in`}>
-                <Texts text={project.description} name={project.name}/>
-              </div>
-            </React.Fragment>
-          ))}
+          {/* Descripción (abajo) */}
+          <div className="w-full max-w-[70vw] max-md:max-w-full ">
+            <Texts text={project.description} name={project.name} />
+          </div>
         </div>
-    );
+      ))}
+    </div>
+  );
 }

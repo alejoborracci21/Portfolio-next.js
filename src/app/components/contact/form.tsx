@@ -50,33 +50,33 @@ export const Form = () => {
   };
 
   //Styles
-  let commonStyles = "flex flex-col bg-[#131313] w-[100%] h-[100%] justify-center items-center rounded-lg";
+  let commonStyles = "flex flex-col bg-[#131313] w-[100%] h-[100%] justify-center items-center rounded-lg max-md:w-[50%] ";
   let labelsStyles = "flex flex-col items-center justify-center w-[100%] h-[90%] mt-4";
   let inputStyles = "w-[90%] h-[100%] bg-[#1a1a1a] text-white rounded-lg p-2 m-2 text-center placeholder-white";
 
 
   return (
-    <div className="grid grid-cols-3 grid-rows-4 gap-7 w-[75vw] h-[100vh] items-center content-center bg-transparent rounded-lg"> 
-      <div className={`col-start-1 row-start-1 ${commonStyles}`}>
+    <div className="grid grid-cols-3 grid-rows-4 gap-7 w-[75vw] h-[100vh] items-center content-center bg-transparent rounded-lg max-md:gap-1"> 
+      <div className={`col-start-1 row-start-1 ${commonStyles} max-md:hidden`}>
       <svg xmlns="http://www.w3.org/2000/svg" width={60} height={90} viewBox="0 0 24 24"><path fill="#e3194d" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"></path></svg>
-      <p className="text-white">Rosario, Santa Fe. Argentina.</p>
+      <p className="text-white max-md:text-xs">Rosario, Santa Fe. Argentina.</p>
       </div>
-      <div className={`col-start-1 row-start-2 ${commonStyles}`}>
+      <div className={`col-start-1 row-start-2 ${commonStyles} max-md:hidden`}>
       <svg xmlns="http://www.w3.org/2000/svg" width={60} height={90} viewBox="0 0 24 24"><path fill="#e3194d" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"></path></svg>
-      <p className="text-white">+54 3465656664</p>
+      <p className="text-white max-md:text-xs">+54 3465656664</p>
       </div>
-      <div className={`col-start-1 row-start-3 ${commonStyles}`}>
+      <div className={`col-start-1 row-start-3 ${commonStyles} max-md:hidden`}>
       <svg xmlns="http://www.w3.org/2000/svg" width={60} height={90} viewBox="0 0 24 24"><path fill="#e3194d" d="m20 8l-8 5l-8-5v10h16zm0-2H4l8 4.99z" opacity={0.3}></path><path fill="#e3194d" d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2M20 6l-8 4.99L4 6zM4 8l8 5l8-5v10H4z"></path></svg>
-      <p className="text-white">alejotrabajo2001@hotmail.com</p>
+      <p className=" text-white max-md:text-xs max-md:text-wrap">alejotrabajo2001@hotmail.com</p>
       </div>
-      <div className={`col-start-1 row-start-4 ${commonStyles}`}>
+      <div className={`col-start-1 row-start-4 ${commonStyles} max-md:hidden`}>
       <svg xmlns="http://www.w3.org/2000/svg" width={60} height={90} viewBox="0 0 24 24"><path fill="#e3194d" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-9 14l-5-5l1.41-1.41L10 14.17l7.59-7.59L19 8z"></path></svg>
-      <p className="text-white">Disponible</p>
+      <p className="text-white max-md:text-xs">Disponible</p>
       </div>
 
       
-      <div className="col-span-2 row-span-4 col-start-2 row-start-1 bg-[#131313] w-[100%] h-[100%] rounded-lg">
-        <form className="grid grid-cols-4 grid-rows-4 gap-2 w-[100%] h-[80%] justify-center items-center rounded-lg" onSubmit={onSubmit}>
+      <div className="col-span-2 row-span-4 col-start-2 row-start-1 bg-[#131313] w-[100%] h-[100%] rounded-lg max-md:col-span-4 max-md:row-span-4 max-md:col-start-1 max-md:row-start-2">
+        <form className="grid grid-cols-4 grid-rows-4 gap-2 w-[100%] h-[80%] justify-center items-center rounded-lg max-md:h-full" onSubmit={onSubmit}>
           <label className={`col-span-2 ${labelsStyles}`}>
             <input type="text" name="name" value={mensaje.name} onChange={onChange} placeholder="Nombre" className={`${inputStyles}`} />
           </label>
@@ -98,7 +98,7 @@ export const Form = () => {
             <p className="text-white">{text}/125</p>
           </label>
           <div className="col-span-4 row-start-5 flex flex-col mt-10 items-center justify-center w-[100%] h-[100%]">
-            <button className="bg-[#e3194d] w-[50%] h-[70%] text-white rounded-lg p-6  text-center justify-center items-center">Enviar</button>
+            <button className="bg-[#e3194d] w-[50%] h-[70%] text-white rounded-lg p-6  text-center justify-center items-center max-md:h-[50%] max-md:mb-5">Enviar email</button>
           </div>
         </form>
       </div>

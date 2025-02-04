@@ -26,8 +26,13 @@ const config: Config = {
           '100%': { transform: 'translateX(0)' },
         },
       },
+      screens: {
+        xs: '320px',
+        420: '420px',
+        520: '520px',
     },
-  },
+    },
+    },
   plugins: [],
 };
 export default config;

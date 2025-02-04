@@ -17,7 +17,7 @@ export const Projects: React.FC<ProjectsProps> = ({ images }) => {
     }
 
     return (
-        <div className='flex flex-col w-full h-full justify-center items-center ml-3'>
+        <div className='flex flex-col w-full h-full justify-center items-center ml-3 max-md:ml-0'>
             <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay interval={5000}>
                 {images.map((image, index) => (
                     <div key={index} className='border-2 border-[#1b1c1e] rounded-lg'>
